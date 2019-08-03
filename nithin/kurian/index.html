@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aloha Creatic | Home</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section id="home">
+        <header>
+            <div class="topnav">
+                <a class="logo" href="#home">
+                <img src="images/logo.jpeg" style="width:100%">
+                </a>
+                <a class="topnav__item nav_active" href="#home">Home</a> 
+                <a class="topnav__item" href="staffs-page.html">About</a>
+                <a class="topnav__item" href="#middle__slider">Gallery</a>
+                <a class="topnav__item" href="blog-page.html">Specialty</a>
+                <a class="topnav__item" href="single-personal.html">Reviews</a>
+                <a class="topnav__item" href="contact-page.html">Contact</a>
+                <a class="topnav__item" href="#book" onclick="showModal('bookOnline')">Book Online</a>
+            </div>
+        </header>
+        <div class="home__phone-number">
+            <a href="tel:+"><span class="home__phone-number-icon fa fa-phone"></span> &nbsp; 999-456-789</a>
+        </div>
+
+        <div id="slideshow" class="slideshow-container slideshow">
+            <div class="mySlides fade slide">
+                <img src="images/spotlight.jpeg" style="width:100%">
+                <div class="text">
+                    <h1> Dr. Minerva Abbott</h1>
+                    <h5> General and Cosmetic Dentistry</h3>
+                    <h6> San Jose, CA </h4>
+                </div>
+            </div>
+
+            <div class="mySlides fade slide">
+                    <img src="images/spotlight.jpeg" style="width:100%">
+                <div class="text">
+                    <h1> Dr. Minerva Abbott</h1>
+                    <h5> General and Cosmetic Dentistry</h3>
+                    <h6> San Jose, CA </h4>
+                </div>
+            </div>
+
+            <div class="mySlides fade slide">
+                    <img src="images/spotlight.jpeg" style="width:100%">
+                <div class="text">
+                    <h1> Dr. Minerva Abbott</h1>
+                    <h5> General and Cosmetic Dentistry</h3>
+                    <h6> San Jose, CA </h4>
+                </div>
+            </div>
+
+            <div class="mySlides-dots dots" style="text-align:center">
+                <span class="mySlides-dot dot" onclick="currentSlide(this)"></span>
+                <span class="mySlides-dot dot" onclick="currentSlide(this)"></span>
+                <span class="mySlides-dot dot" onclick="currentSlide(this)"></span>
+            </div>
+
+            <div id="review_slider" class="review_slider-container slideshow">
+                <div class="review_slider fade slide">
+                    <div class="review_slider_header">
+                        <div class="review-logo">
+                            <img src="images/yelp.png" alt="">
+                        </div>
+                        <div class="review-star">
+                            <span class="red">4</span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="light">The best way to treat the best </p>
+                        <p class="dark">- Mc greaver</p>
+                    </div>
+                </div>
+                <div class="review_slider fade slide">
+                    <div class="review_slider_header">
+                        <div class="review-logo">
+                            <img src="images/yelp.png" alt="">
+                        </div>
+                        <div class="review-star">
+                            <span class="red">4</span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star-half red"></span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="light">The the bestin treatment </p>
+                        <p class="dark">- Tom Haiden </p>
+                    </div>
+                </div>
+                <div class="review_slider fade slide">
+                    <div class="review_slider_header">
+                        <div class="review-logo">
+                            <img src="images/yelp.png" alt="">
+                        </div>
+                        <div class="review-star">
+                            <span class="red">3</span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                            <span class="icon fa fa-star red"></span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="light">The awesowe place to live it </p>
+                        <p class="dark">- Maiden </p>
+                    </div>
+                </div>
+
+                <div class="review_slider-dots dots" data-slideName="">
+                    <span class="review_slider-dot dot" onclick="currentSlide(this)"></span>
+                    <span class="review_slider-dot dot" onclick="currentSlide(this)"></span>
+                    <span class="review_slider-dot dot" onclick="currentSlide(this)"></span>
+                </div>
+
+            </div>
+            
+        </div>
+    </section><!-- #home -->
+
+    <section id="doctors-details">
+        <div class="doctors-row">
+            <div class="doctors-item-type-one">
+                <div class="doctors-item-person-img"><img src="images/photo1.jpeg" alt="Dr. Maud McDonald"></div>
+                <div class="doctors-item-person-details">
+                    <h2 class="dark">Dr. Maud McDonald</h2>
+                    <h6>General Physician</h6>
+                    <p class="paragraph">One of the top surgeons with the best ability to make the right decisions</p>
+                    <h5>Education</h5>
+                    <p>University of Michigan</p>
+                    <p>Medical</p>
+                </div>
+            </div>
+            <div class="doctors-item-type-one">
+                <div class="doctors-item-person-img"><img src="images/photo1.jpeg" alt="Dr. Maud McDonald"></div>
+                <div class="doctors-item-person-details">
+                    <h2 class="dark">Dr. Maud McDonald</h2>
+                    <h6>General Physician</h6>
+                    <p class="paragraph">One of the top surgeons with the best ability to make the right decisions</p>
+                    <h5>Education</h5>
+                    <p>University of Michigan</p>
+                    <p>Medical</p>
+                </div>
+            </div>
+        </div>
+        <div class="doctors-row">
+            <div class="doctors-item-type-two">
+                <div class="doctors-item-membership">
+                    <small class="doctors-item-icon">
+                        <span class="fa fa-star-o"></span>
+                    </small>
+                    <div class="doctors-item-details">
+                        <h5>Membership</h5>
+                        <p>Be a part of this amazing wender</p>
+                    </div>
+                </div>
+                <div class="doctors-item-languages">
+                    <small class="doctors-item-icon">
+                        <span class="fa fa-comment-o"></span>
+                    </small>
+                    <div class="doctors-item-details">
+                        <h5>Language</h5>
+                        <p>English</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-item-type-two">
+                <div class="doctors-item-membership">
+                    <small class="doctors-item-icon">
+                        <span class="fa fa-star-o"></span>
+                    </small>
+                    <div class="doctors-item-details">
+                        <h5>Membership</h5>
+                        <p>Be a part of this amazing wender</p>
+                    </div>
+                </div>
+                <div class="doctors-item-languages">
+                    <small class="doctors-item-icon">
+                        <span class="fa fa-comment-o"></span>
+                    </small>
+                    <div class="doctors-item-details">
+                        <h5>Language</h5>
+                        <p>English</p>
+                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section><!-- #doctors-details -->
+    
+    <section id="middle__slider">
+        <section class="wrapper">
+            <h2 class="text-capitalize text-center yellow">Our practice</h2>
+            <div id="middleSlider" class="middle__slider_items slideshow">
+                <div class="fade middle__slider_item slide">
+                    <div class="middle__slider-left">
+                        <div class="middle__slider-image middle__slider-top">
+                            <img src="images/practice.jpeg" alt="Image" class="middle__slider-top-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                        <div class="middle__slider-image middle__slider-bottom">
+                            <img src="images/practice.jpeg" alt="Image" class="middle__slider-bottom-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle__slider-image middle__slider-right">
+                        <img src="images/practice.jpeg" alt="Image" class="middle__slider-right-image">
+                        <div class="middle__slider-overlay">
+                            <div class="middle__slider-text">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade middle__slider_item slide">
+                    <div class="middle__slider-left">
+                        <div class="middle__slider-image middle__slider-top">
+                            <img src="images/blog1.png" alt="Image" class="middle__slider-top-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                        <div class="middle__slider-image middle__slider-bottom">
+                            <img src="images/blog1.png" alt="Image" class="middle__slider-bottom-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle__slider-image middle__slider-right">
+                        <img src="images/blog1.png" alt="Image" class="middle__slider-right-image">
+                        <div class="middle__slider-overlay">
+                            <div class="middle__slider-text">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade middle__slider_item slide">
+                    <div class="middle__slider-left">
+                        <div class="middle__slider-image middle__slider-top">
+                            <img src="images/blog1.png" alt="Image" class="middle__slider-top-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                        <div class="middle__slider-image middle__slider-bottom">
+                            <img src="images/blog1.png" alt="Image" class="middle__slider-bottom-image">
+                            <div class="middle__slider-overlay">
+                                <div class="middle__slider-text">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle__slider-image middle__slider-right">
+                        <img src="images/blog1.png" alt="Image" class="middle__slider-right-image">
+                        <div class="middle__slider-overlay">
+                            <div class="middle__slider-text">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(this)">&#10094;</a>
+                <a class="next test" onclick="plusSlides(this)">&#10095;</a>
+                
+            </div>
+        </section>     
+    </section>
+
+    <section id="service__container">
+        <section class="wrapper">
+            <h2 class="service__container-head text-capitalize yellow">Our services</h2>
+            <div class="service__container-items">
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us </h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                       
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                       
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+                <div class="service__container-item">
+                    <div class="overlay"></div>
+                    <div class="service__container-content">
+                        <h5>Be with us</h5>
+                        
+                    </div>
+                    <img src="images/service1.jpg" alt="Image" class="image">
+                </div>
+            </div>
+        </section>
+    </section><!-- #service -->
+
+    <section id="insurance">
+        <section class="wrapper">
+            <div class="dark insurance__contents">
+                <div class="insurance__content-left">
+                    <h2 class="dark">Insurance</h2>
+                    <p class="light-dark">We accept all kinds of PPO and indemnity insurance. A preferred provider organization, typically referred to as a PPO, offers you easy access to a network of providers who provide services at a discounted rate. It enables patients to seek out-of-network services.</p>
+                </div>
+                <div class="insurance__content-right">
+                    <ul>
+                        <li>AETNA</li>
+                        <li>Assurant/DHA</li>
+                        <li>Blue Shield of CA</li>
+                        <li>Delta Dental</li>
+                        <li>Guardian</li>
+                        <li>Metlife</li> 
+                        <li>Premier Access</li>
+                        <li>Principal Standard</li>
+                        <li> United Healthcare</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>Blue Shield of CA</li>
+                        <li>Assurant/DHA</li>
+                        <li>Delta Dental</li>
+                        <li>Guardian</li>
+                        <li>Metlife</li>
+                        <li>Principal Standard</li>  
+                        <li class="insurance-button">
+                            <a href="#insurance_popup" onclick="showModal('insurance_popup');" class="button button-primary">More</a>
+                        </li>                 
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section><!-- #insurance -->
+
+    <section id="blog">
+        <section class="wrapper">
+            <div class="blog__header">
+                <h2 class="black">Blog update</h2>
+                <a href="blog-page.html" class="button button-secondary  muted">View all</a>
+            </div>
+            <div class="blog-block">
+                <div class="blog-block-card">
+                    <div class="blog-block-card__img">
+                        <img src="images/blog1.png" alt="Image">
+                    </div>
+                    <div class="blog-block-card-content">
+                        <div class="blog-block-card-content__header">
+                            <h4 class="yellow">Blog title goes here</h4>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="blog-block-card-content__body">
+                            <p>drftghyujiklo;p'[ploikujyhtr5f45gthy7uj8ol0p-</p>
+                        </div>
+                        <div class="blog-block-card-content__footer">
+                            <h6 class="light text-capitalize">JUSTIN </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-block-card">
+                    <div class="blog-block-card__img">
+                        <img src="images/blog1.png" alt="Image">
+                    </div>
+                    <div class="blog-block-card-content">
+                        <div class="blog-block-card-content__header">
+                            <h4 class="yellow">Blog title goes here</h4>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="blog-block-card-content__body">
+                            <p>health is wealth </p>
+                        </div>
+                        <div class="blog-block-card-content__footer">
+                            <h6 class="light text-capitalize">JUSTIN </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-block-card">
+                    <div class="blog-block-card__img">
+                        <img src="images/blog1.png" alt="Image">
+                    </div>
+                    <div class="blog-block-card-content">
+                        <div class="blog-block-card-content__header">
+                            <h4 class="yellow">Blog title </h4>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="blog-block-card-content__body">
+                            <p>Health is wealth </p>
+                        </div>
+                        <div class="blog-block-card-content__footer">
+                            <h6 class="light text-capitalize">JUSTIN VAUGHN </h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog__footer">
+                <div class="blog__footer-cards">
+                    <div class="blog__footer-card">
+                        <div class="blog__footer-card__img">
+                            <img src="images/blog1.png" alt="Image">
+                        </div>
+                        <div class="blog__footer-card-content">
+                            <h4 class="yellow">Blog title </h4>
+                            <h6 class="light text-uppercase">JUSTIN VAUGHN </h6>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="blog__footer-card">
+                        <div class="blog__footer-card__img">
+                            <img src="images/blog1.png" alt="Image">
+                        </div>
+                        <div class="blog__footer-card-content">
+                            <h4 class="yellow">Blog title </h4>
+                            <h6 class="light text-uppercase">JUSTIN </h6>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="blog__footer-card">
+                        <div class="blog__footer-card__img">
+                            <img src="images/blog1.png" alt="Image">
+                        </div>
+                        <div class="blog__footer-card-content">
+                            <h4 class="yellow">Blog title </h4>
+                            <h6 class="light text-uppercase">JUSTIN </h6>
+                            <div class="blog-block-reactions">
+                                <div class="comment">
+                                    <a href="#" class="light row">
+                                        <span class="number light">12</span>
+                                        <span class="icon fa fa-comment-o"></span>
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="light row">
+                                        <span class="number light">3</span>
+                                        <span class="icon fa fa-share"></span>
+                                    </a>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section><!-- #blog -->
+
+    <section id="team-members" class="bg-light-gray">
+        <section class="wrapper">
+            <h2 class="text-capitalize black">Meet our team</h2>
+            <div class="team-member-cards">
+                <div class="team-member-card">
+                    <div class="team-member-card__img">
+                        <img src="images/team1.png" alt="Image">
+                    </div>
+                    <div class="team-member-card__content">
+                        <h5 class="dark">Angel Ortiz</h5>
+                        <h6>Physician</h6>
+                        <p>the docyot </p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-member-card__img">
+                        <img src="images/team2.png" alt="Image">
+                    </div>
+                    <div class="team-member-card__content">
+                        <h5 class="dark">Rachel Bush</h5>
+                        <h6>Physician</h6>
+                        <p>The doctor effect</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-member-card__img">
+                        <img src="images/team3.png" alt="Image">
+                    </div>
+                    <div class="team-member-card__content">
+                        <h5 class="dark">Gene Hodges</h5>
+                        <h6>Physician</h6>
+                        <p>th edoctor </p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-member-card__img">
+                        <img src="images/team4.png" alt="Image">
+                    </div>
+                    <div class="team-member-card__content">
+                        <h5 class="dark">Todd Montgomery</h5>
+                        <h6>Physician</h6>
+                        <p>the doctor </p>
+                    </div>
+                </div>
+            </div>
+            <a href="staffs-page.html" class="button button-secondary">View all</a>
+        </section>
+    </section> <!-- #team-members -->
+
+    <section id="awards">
+        <section class="wrapper">
+            <h2 class="light-dark text-center">Awards</h2>
+            <div class="awards-content">
+                <div class="awards-item"><img src="images/awards1.png" alt="Image"></div>
+                <div class="awards-item"><img src="images/awards2.png" alt="Image"></div>
+                <div class="awards-item"><img src="images/awards3.png" alt="Image"></div>
+                <div class="awards-item"><img src="images/awards4.png" alt="Image"></div>
+                <div class="awards-item"><img src="images/awards5.png" alt="Image"></div>
+                <div class="awards-item"><img src="images/awards6.png" alt="Image"></div>
+            </div>
+        </section>
+    </section> <!-- #awards -->
+
+    <footer>
+        <div class="footer__header row">
+            <div class="wrapper">
+                <div class="footer__header-content">
+                    <h2 class="white">Location</h2>
+                    <div class="footer__header-right">
+                        <div class="footer-phone">
+                            <a href="tel:+099-48-789" class="white">
+                                <span class="icon yellow fa fa-phone"></span>
+                                <span>99-55-4789</span>
+                            </a>
+                        </div>
+                        <div class="footer-mail">
+                            <a href="mailto:cremin.claudine@elmo.net" class="white">
+                                <span class="icon yellow fa fa-envelope-open-o"></span>
+                                <span>info@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="footer__body">
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San diago </h5>
+                        <p>02 Karine</p>
+                        <p>Throughway</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">    
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San Jose</h5>
+                        <p>02 Karine</p>
+                        <p>Throughway Apt. 647</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San Diago</h5>
+                        <p>02 Karine</p>
+                        <p>Throughway</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        
+                        <p><a href="#" class="text-capitalize white">Privacy Policy</a></p>
+                        <p><a href="#" class="text-capitalize white">Terms & Conditions</a></p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="" class="icon light fa fa-twitter"></a>
+                        <a href="" class="icon light fa fa-google-plus"></a>
+                        <a href="" class="icon light fa fa-facebook"></a>
+                        <a href="" class="icon light fa fa-tumblr"></a>
+                        <a href="" class="icon light fa fa-skype"></a>
+                        <a href="" class="icon light fa fa-vimeo"></a>
+                        <a href="" class="icon light fa fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- (footer) -->
+
+    <!-- Insurance Modal -->
+
+    <div id="insurance_popup" class="modal">
+        <div class="modal-content insurance_modal_content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="insurance_popup_content">
+                <div class="insurance-popup__header">
+                    <h2 class="yellow">Insurance</h2>
+                </div>
+                <div class="insurance-popup__body">
+                    <div class="insurance-popup__body-content">
+                        <ul>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>PAETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                            <li>UAETNA</li>
+                            <li>AETNA</li>
+                            <li>AETNA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Book online Modal -->
+
+    <div id="bookOnline" class="modal">
+
+        <!-- Book online Modal content -->
+        <div id="selectLocation" class="modal-content location-modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item">
+                <div onclick="nextPage(1)" class="modal-item-content">
+                    <h6 class="dark">San Jose, CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 Karine Throughway Apt. 647</p>
+                            <p class="dark">+1 234 567 890</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_option">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-item">
+                <div onclick="nextPage(2)" class="modal-item-content">
+                    <h6 class="dark">San Jose, CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 Karine </p>
+                            <p class="dark">+1 234 567 890</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-item">
+                <div onclick="nextPage(3)" class="modal-item-content">
+                    <h6 class="dark">San Jose, CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 Karine Throughway Apt. 647</p>
+                            <p class="dark">+1 234 567 890</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="selectDoctor" class="modal-content doctor-modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item modal-prev" onclick="backPage()">&#60;</div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(1)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team1.png" alt="Doctors image">
+            </div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(2)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team2.png" alt="Doctors image">
+            </div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(3)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team3.png" alt="Doctors image"> 
+            </div>
+        </div>
+
+        <div id="appointmentDetails" class="modal-content appointment-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item modal-prev" onclick="backPage()">	&#60;</div>
+            <div class="modal-item appointment-modal-item">
+                <div class="selected-doctor">
+                    <img src="images/photo4.png" alt="Doctors Profile">
+                    <h6>Angel Ortiz</h6>
+                    <p>Dentist</p>
+                </div>
+                <div class="appointment-form">
+                    <form onsubmit="bookingSubmit()" id="booking">
+                        <h2 class="yellow">Book an Appointment</h2>
+                        <div class="appointment-input">
+                            <input name='firstName' type="text" placeholder="First Name">
+                            <input name='lastName' type="text" placeholder="Last Name">
+                            <input name='email' type="email" placeholder="Email">
+                            <input name='phone' type="tel" placeholder="Phone">
+                        </div>
+
+                        <fieldset class="day" style="border:none;">
+                            <legend>Select Day <span class="light-dark">(You can select multiple days)</span></legend>
+                            <div class="weekDays-selector">
+                                <input type="checkbox" id="weekday-mon" class="weekday" />
+                                <label for="weekday-mon">Mon</label>
+                                <input type="checkbox" id="weekday-tue" class="weekday" />
+                                <label for="weekday-tue">Tue</label>
+                                <input type="checkbox" id="weekday-wed" class="weekday" />
+                                <label for="weekday-wed">Wed</label>
+                                <input type="checkbox" id="weekday-thu" class="weekday" />
+                                <label for="weekday-thu">Thu</label>
+                                <input type="checkbox" id="weekday-fri" class="weekday" />
+                                <label for="weekday-fri">Fri</label>
+                                <input type="checkbox" id="weekday-sat" class="weekday" />
+                                <label for="weekday-sat">Sat</label>
+                                <input type="checkbox" id="weekday-sun" class="weekday" />
+                                <label for="weekday-sun">Sun</label>
+                            </div>
+                            <span class="error"></span>
+                        </fieldset>
+
+                        <fieldset class="time" style="border:none;">
+                            <legend>Select Time (You can select multiple periods)</legend>
+                            <div class="timeSelector">
+                                <input type="checkbox" id="morning" class="time" />
+                                <label for="morning">Morning</label>
+                                <input type="checkbox" id="afternoon" class="time" />
+                                <label for="afternoon">Afternoon</label>
+                                <input type="checkbox" id="evening" class="time" />
+                                <label for="evening">Evening</label>
+                            </div>
+                            <span class="error"></span>
+                        </fieldset>
+
+                        <input type="submit" value="Request an Appointment" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id = "done" class="modal-content modal-done">
+            <div class="success">
+                <h3>Great</h3>
+                <p>Your appointment request has been received!</p>
+            </div>
+            <a id="success" class="button button-primary" onclick="closeModal()">Done</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/script.js"></script>
+</html>

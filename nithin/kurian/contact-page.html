@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aloha Creatic | Contact</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section id="home">
+        <header>
+            <div class="topnav">
+                <a class="logo" href="#home">
+                <img src="images/logo.jpeg" style="width:100%">
+                </a>
+                <a class="topnav__item" href="index.html">Home</a> 
+                <a class="topnav__item" href="staffs-page.html">About</a>
+                <a class="topnav__item" href="#gallery">Gallery</a>
+                <a class="topnav__item" href="#specialty">Specialty</a>
+                <a class="topnav__item" href="single-personal.html">Reviews</a>
+                <a class="topnav__item nav_active" href="#contact">Contact</a>
+                <a class="topnav__item" href="#book" onclick="showModal('bookOnline')">Book Online</a>
+            </div>
+        </header>
+        <div class="spotlight__body">
+            <section class="wrapper">
+                <p class="breadcrumb">
+                    <span><a href="index.html">Home &nbsp;</a></span>
+                    <span class="breadcrumb-active">> Contact us</span>
+                </p>
+                <div class="spotlight-content">
+                    <h1>Contact us</h1>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="contact__body" class="bg-light-gray">
+        <section class="wrapper">
+            <form action="">
+                <div class="form__header dark text-capitalize">
+                    <h2>Say hello</h2>
+                </div>
+                <div class="form__body">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="phone" id="phone" placeholder="Your phone">
+                    <select>
+                        <option value="Location">Location</option>    
+                        <option value="san jose">San jose</option>
+                        <option value="san jose">San jose</option>
+                        <option value="san jose">San jose</option>
+                        <option value="san jose">San jose</option>
+                    </select>
+                    <textarea name="message" id="message" cols="30" rows="6"  placeholder="Write your message.."></textarea>
+                    <label for="agree" class="agree-checkbox">
+                        I understand that the information sent via this form will be emailed to the
+                        office and does not go via a secure messaging system. This form is not
+                        meant to share your private health information with the office.
+                        <input type="checkbox" name="agree" id="agree" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+                <div class="form__footer">
+                    <input type="submit" value="Contact us" class="text-capitalize" class="form-submit-button">
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer__header row">
+            <div class="wrapper">
+                <div class="footer__header-content">
+                    <h2 class="white">Location</h2>
+                    <div class="footer__header-right">
+                        <div class="footer-phone">
+                            <a href="tel:+032-957-9485" class="white">
+                                <span class="icon yellow fa fa-phone"></span>
+                                <span>9876543211</span>
+                            </a>
+                        </div>
+                        <div class="footer-mail">
+                            <a href="mailto:cremin.claudine@elmo.net" class="white">
+                                <span class="icon yellow fa fa-envelope-open-o"></span>
+                                <span>cremin.claudine@elmo.net</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="footer__body">
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San Jose</h5>
+                        <p>02 Karine</p>
+                        <p>Throughway Apt. 647</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">    
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San Jose</h5>
+                        <p>02 Karine</p>
+                        <p>Throughway Apt. 647</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+            <div class="footer-card">
+                <div class="footer_content">
+                    <div class="footer-card-left">
+                        <h5 class="dark text-capitalize">San Jose</h5>
+                        <p>02 Karine</p>
+                        <p>Throughway Apt. 647</p>
+                        <a class="button button-primary text-capitalize" onclick="showModal('bookOnline', {'loc':1})">Book online</a>
+                    </div>
+                    <div class="footer-card-right dark">
+                        <p>Mon - 9 AM to 6 PM</p>
+                        <p>Tue - 9 AM to 6 PM</p>
+                        <p>Wed - 9 AM to 6 PM</p>
+                        <p class="light">Thu - Close</p>
+                        <p>Fri - 9 AM to 6 PM</p>
+                        <p>Sat - 9 AM to 6 PM</p>
+                        <p class="light">Sun - Close</p>
+                    </div>
+                </div>
+                <div class="footer-overlay"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                      
+                        <p><a href="#" class="text-capitalize white">Privacy Policy</a></p>
+                        <p><a href="#" class="text-capitalize white">Terms & Conditions</a></p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="" class="icon light fa fa-twitter"></a>
+                        <a href="" class="icon light fa fa-google-plus"></a>
+                        <a href="" class="icon light fa fa-facebook"></a>
+                        <a href="" class="icon light fa fa-tumblr"></a>
+                        <a href="" class="icon light fa fa-skype"></a>
+                        <a href="" class="icon light fa fa-vimeo"></a>
+                        <a href="" class="icon light fa fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- (footer) -->
+
+    <!-- Insurance Modal -->
+
+    <div id="insurance_popup" class="modal">
+        <div class="modal-content insurance_modal_content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="insurance_popup_content">
+                <div class="insurance-popup__header">
+                    <h2 class="yellow">Insurance</h2>
+                </div>
+                <div class="insurance-popup__body">
+                    <div class="insurance-popup__body-content">
+                        <ul>
+                            <li>AETNA</li>
+                            <li>Blue Shield of CA</li>
+                            <li>Assurant/DHA</li>
+                            <li>Delta Dental</li>
+                            <li>Delta Dental</li>
+                            <li>Guardian</li>
+                            <li>Guardian</li>
+                            <li>Metlife</li>
+                            <li>Metlife</li>
+                            <li>Principal Standard</li>
+                            <li>Premier Access</li>
+                            <li>Metlife</li>
+                            <li>Principal Standard</li>
+                            <li>Premier Access</li>
+                            <li>United Healthcare</li>
+                            <li>Principal Standard</li>
+                            <li>United Healthcare</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <button onclick="showModal('bookOnline')">Book Online</button> -->
+
+    <div id="bookOnline" class="modal">
+
+        <!-- Book online Modal content -->
+        <div id="selectLocation" class="modal-content location-modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item">
+                <div onclick="nextPage(1)" class="modal-item-content">
+                    <h6 class="dark">john snow, CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 Karine Throughway Apt. 647</p>
+                            <p class="dark">898956 454 54</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_option">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-item">
+                <div onclick="nextPage(2)" class="modal-item-content">
+                    <h6 class="dark">Dyeneris , CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 Karine Throughway Apt. 647</p>
+                            <p class="dark">95623 45787</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-item">
+                <div onclick="nextPage(3)" class="modal-item-content">
+                    <h6 class="dark">Kurian, CA</h6>
+                    <div class="location">
+                        <div class="address_location">
+                            <p>02 kayees hostel</p>
+                            <p class="dark">97 989 77 8</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="selectDoctor" class="modal-content doctor-modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item modal-prev" onclick="backPage()">&#60;</div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(1)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team1.png" alt="Doctors image">
+            </div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(2)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team2.png" alt="Doctors image">
+            </div>
+            <div class="modal-item doctors-modal-item">
+                <div onclick="nextPage(3)" class="doctors_content">
+                    <div class="modal_doctors_details">
+                        <div class="modal_doctors_name">
+                            <h6>Angel Ortiz</h6>
+                            <p>Dentist</p>
+                        </div>
+                        <div class="modal-button"><a href="#" class="select_location">Select location ></a></div>
+                    </div>
+                </div>
+                <img src="images/team3.png" alt="Doctors image"> 
+            </div>
+        </div>
+
+        <div id="appointmentDetails" class="modal-content appointment-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-item modal-prev" onclick="backPage()">	&#60;</div>
+            <div class="modal-item appointment-modal-item">
+                <div class="selected-doctor">
+                    <img src="images/photo4.png" alt="Doctors Profile">
+                    <h6>Angel Ortiz</h6>
+                    <p>Dentist</p>
+                </div>
+                <div class="appointment-form">
+                    <form onsubmit="bookingSubmit()" id="booking">
+                        <h2 class="yellow">Book an Appointment</h2>
+                        <div class="appointment-input">
+                            <input name='firstName' type="text" placeholder="First Name">
+                            <input name='lastName' type="text" placeholder="Last Name">
+                            <input name='email' type="email" placeholder="Email">
+                            <input name='phone' type="tel" placeholder="Phone">
+                        </div>
+
+                        <fieldset class="day" style="border:none;">
+                            <legend>Select Day <span class="light-dark">(You can select multiple days)</span></legend>
+                            <div class="weekDays-selector">
+                                <input type="checkbox" id="weekday-mon" class="weekday" />
+                                <label for="weekday-mon">Mon</label>
+                                <input type="checkbox" id="weekday-tue" class="weekday" />
+                                <label for="weekday-tue">Tue</label>
+                                <input type="checkbox" id="weekday-wed" class="weekday" />
+                                <label for="weekday-wed">Wed</label>
+                                <input type="checkbox" id="weekday-thu" class="weekday" />
+                                <label for="weekday-thu">Thu</label>
+                                <input type="checkbox" id="weekday-fri" class="weekday" />
+                                <label for="weekday-fri">Fri</label>
+                                <input type="checkbox" id="weekday-sat" class="weekday" />
+                                <label for="weekday-sat">Sat</label>
+                                <input type="checkbox" id="weekday-sun" class="weekday" />
+                                <label for="weekday-sun">Sun</label>
+                            </div>
+                            <span class="error"></span>
+                        </fieldset>
+
+                        <fieldset class="time" style="border:none;">
+                            <legend>Select Time (You can select multiple periods)</legend>
+                            <div class="timeSelector">
+                                <input type="checkbox" id="morning" class="time" />
+                                <label for="morning">Morning</label>
+                                <input type="checkbox" id="afternoon" class="time" />
+                                <label for="afternoon">Afternoon</label>
+                                <input type="checkbox" id="evening" class="time" />
+                                <label for="evening">Evening</label>
+                            </div>
+                            <span class="error"></span>
+                        </fieldset>
+
+                        <input type="submit" value="Request an Appointment" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id = "done" class="modal-content modal-done">
+            <div class="success">
+                <h3>Great</h3>
+                <p>Your appointment request has been received!</p>
+            </div>
+            <a id="success" class="button button-primary" onclick="closeModal()">Done</a>
+        </div>
+    </div>
+
+   
+
+</body>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/script.js"></script>
+</html>
